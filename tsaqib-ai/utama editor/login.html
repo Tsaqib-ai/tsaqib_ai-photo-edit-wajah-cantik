@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Tsaqib AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-100 flex items-center justify-center h-screen">
+  <div class="bg-white shadow-lg p-8 rounded-2xl w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center text-pink-600 mb-6">Login ke Tsaqib AI</h2>
+    <form id="loginForm" class="flex flex-col gap-4">
+      <input type="email" id="email" placeholder="Email" class="p-2 border rounded" required />
+      <input type="password" id="password" placeholder="Password" class="p-2 border rounded" required />
+      <button type="submit" class="bg-pink-500 text-white py-2 rounded hover:bg-pink-600">
+        Masuk
+      </button>
+    </form>
+    <p class="mt-4 text-sm text-gray-500 text-center">Gunakan email <strong>admin@tsaqib.ai</strong> dan password <strong>123456</strong></p>
+  </div>
+
+  <script src="auth.js"></script>
+
+<script>
+  if (!localStorage.getItem("isLoggedIn")) {
+    window.location.href = "login.html";
+  }
+</script>
+
+</body>
+</html>

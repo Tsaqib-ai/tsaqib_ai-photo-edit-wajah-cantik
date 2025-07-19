@@ -1,0 +1,14 @@
+body {
+    background-image: linear-gradient(to right top, #fce4ec, #f8bbd0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="file"] {
+    border: 2px dashed #f06292;
+    background-color: #fff0f5;
+    transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+    background-color: #ffe4f3;
+}
